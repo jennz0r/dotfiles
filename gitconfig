@@ -1,0 +1,25 @@
+[branch]
+	autosetuprebase = always
+	autosetupmerge = always
+[user]
+[push]
+	default = current
+
+[alias]
+    a = add
+    ap = add -p
+    bvv = branch -vv
+    co = checkout
+    cob = checkout -b
+    d = branch -d
+    D = branch -D
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    lgv = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --numstat
+    s = stash
+    sp = stash pop
+    st = status
+    standup = !git log --since yesterday --author `git config user.email` --pretty=short
+[user]
+	email = jw@eventbrite.com
+	name = Jennifer Wong
+	initials = jw
