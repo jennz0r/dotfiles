@@ -10,12 +10,8 @@ ENDTUR='\e[0m\]'
 
 export PS1="🍦  $STARTGREEN\w$ENDGREEN$STARTTUR\$(__git_ps1)$ENDTUR $STARTBLUE\u sez:$ENDBLUE "
 export PATH=/bin:/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:$PATH
-source /usr/local/bin/virtualenvwrapper.sh
 
 export EDITOR='subl -w'
-
-export ARCANIST_INSTALL_DIR=/Users/jw/.evbdevtools
-source $ARCANIST_INSTALL_DIR/devtools/scripts/devenv_bash/arcanist_helpers.sh
 
 if [ -f ~/.git-completion.bash ]; then
     . ~/.git-completion.bash
