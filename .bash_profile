@@ -14,9 +14,6 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 export EDITOR='subl -w'
 
-export ARCANIST_INSTALL_DIR=/Users/jw/.evbdevtools
-source $ARCANIST_INSTALL_DIR/devtools/scripts/devenv_bash/arcanist_helpers.sh
-
 if [ -f ~/.git-completion.bash ]; then
     . ~/.git-completion.bash
 fi
